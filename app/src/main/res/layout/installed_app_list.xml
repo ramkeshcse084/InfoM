@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:padding="12sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:contentDescription="@string/hello_world"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/list_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/app_icon"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/app_icon"
+            android:text="@string/hello_world"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewVeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/app_icon"
+            android:layout_alignLeft="@+id/list_app_name"
+            android:layout_alignStart="@+id/list_app_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="verNumber"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/textViewInstDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/list_app_name"
+            android:paddingRight="4dp"
+            android:text="FirstInstall"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/textViewLastUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewVeNum"
+            android:layout_alignBottom="@+id/textViewVeNum"
+            android:layout_alignEnd="@+id/textViewInstDate"
+            android:paddingRight="4dp"
+            android:text="LastUp"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/textViewVerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewPack"
+            android:layout_alignBottom="@+id/textViewPack"
+            android:layout_toEndOf="@+id/app_icon"
+            android:paddingRight="50sp"
+            android:text="verName"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/textViewPack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLastUp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/textViewVerName"
+            android:padding="20sp"
+            android:paddingRight="30dp"
+            android:paddingTop="20sp"
+            android:textSize="10sp"
+            android:text="PackName"
+            android:textColor="#0000FF" />
+    </RelativeLayout>
+</RelativeLayout>
