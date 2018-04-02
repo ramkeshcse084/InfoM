@@ -1,19 +1,32 @@
 package com.nestedmango.infom;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class Next3Info extends AppCompatActivity {
-    TextView txttype,txtTimezone,txtSerial,txtMnc,txtAndroidId,txtTimeZoneId;
+    TextView txtCpu_Arch,txtNetInfo,txtCpu_Abi,txtCarrierName,txtOsCode,txtModelName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next3_info);
+        txtCpu_Arch=(TextView)findViewById(R.id.textViewCpu_Arch);
+        txtNetInfo=(TextView)findViewById(R.id.textViewNextInfo);
+        txtCpu_Abi=(TextView)findViewById(R.id.textViewalCpu_Abi);
+        txtCarrierName=(TextView)findViewById(R.id.textViewCarrierName);
+        txtOsCode=(TextView)findViewById(R.id.textViewOs_Code);
+        txtModelName=(TextView)findViewById(R.id.textViewModelName);
+
+    }
+    public void Next4(View v){
+        Intent i=new Intent(getApplication(),Next3Info.class);
+        startActivity(i);
     }
 
     public static String Cpu_Arch(int number){

@@ -23,7 +23,8 @@
         <activity android:name=".InstalledApps" />
         <activity android:name=".BasicInfoM" />
         <activity android:name=".Next2Info" />
-        <activity android:name=".Next3Info"></activity>
+        <activity android:name=".Next3Info" />
+        <activity android:name=".Next4Info"></activity>
     </application>
 
 </manifest>
