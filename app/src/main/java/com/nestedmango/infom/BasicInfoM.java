@@ -2,6 +2,7 @@ package com.nestedmango.infom;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
@@ -12,6 +13,7 @@ import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.text.format.Formatter;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -19,16 +21,37 @@ import java.io.InputStream;
 import java.util.TimeZone;
 
 public class BasicInfoM extends AppCompatActivity {
-TextView txtFingerPrint,txtOsIncre;
+TextView txtFingerPrint,txtOsIncre,txtHardWare,txtDevice,txtCpuCore,txtPrivateIp;
+TextView txtNextPage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_info_m);
         txtFingerPrint=(TextView)findViewById(R.id.textViewFinger);
       txtOsIncre=(TextView)findViewById(R.id.textViewOsIncrement);
+      txtHardWare=(TextView)findViewById(R.id.textViewHardware);
+      txtDevice=(TextView)findViewById(R.id.textViewDevice);
+      txtCpuCore=(TextView)findViewById(R.id.textViewCpu_Core);
+      txtPrivateIp=(TextView)findViewById(R.id.textViewPrivate_ip);
 
        String p= fingerPrint(8);
+       String osi=osIncrement(1);
+       String hrware=Hardware(3);
+       String device=Device(1);
+       int cpu_Core=Cpu_Core(2);
+       String priIp=Private_ip(3);
+
         txtFingerPrint.setText(p);
+        txtCpuCore.setText(cpu_Core+"");
+        txtDevice.setText(device);
+        txtPrivateIp.setText(priIp);
+        txtHardWare.setText(hrware);
+        txtOsIncre.setText(osi);
+    }
+
+    public void Next2(View v){
+        Intent i=new Intent(getApplication(),Next2Info.class);
+        startActivity(i);
     }
 
     public static String fingerPrint(int number){

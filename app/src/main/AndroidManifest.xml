@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".InstalledApps" />
-        <activity android:name=".BasicInfoM"></activity>
+        <activity android:name=".BasicInfoM" />
+        <activity android:name=".Next2Info" />
+        <activity android:name=".Next3Info"></activity>
     </application>
 
 </manifest>

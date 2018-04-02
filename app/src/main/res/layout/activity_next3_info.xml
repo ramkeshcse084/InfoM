@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10sp"
-
+    android:layout_margin="5sp"
+    android:background="@android:color/holo_orange_light"
     android:orientation="vertical"
-    tools:context="com.nestedmango.infom.BasicInfoM">
+    tools:context="com.nestedmango.infom.Next3Info">
 
     <TextView
         android:id="@+id/textViewHeading"
@@ -24,101 +24,101 @@
         android:id="@+id/txtFingerPr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FingerPrint:"
+        android:text="Cpu_Arch:"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewFinger"
+        android:id="@+id/textViewCpu_Arch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
-        android:text="fingerPr" />
+        android:textColor="@android:color/white"
+        android:text="Cpu_Arch" />
     <TextView
-        android:id="@+id/txtosIncrement"
+        android:id="@+id/txttimezone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OsIncrement:"
+        android:text="Network_info:"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
     <TextView
-        android:id="@+id/textViewOsIncrement"
+        android:id="@+id/textViewNetwork_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
-        android:text="OsIncrement" />
+        android:textColor="@android:color/white"
+        android:text="Network_info" />
 
     <TextView
         android:id="@+id/txtHardware"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hardware:"
+        android:text="Cpu_Abi:"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
     <TextView
-        android:id="@+id/textViewHardware"
+        android:id="@+id/textViewalCpu_Abi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
-        android:text="Hardware" />
+        android:textColor="@android:color/white"
+        android:text="Cpu_Abi" />
     <TextView
         android:id="@+id/txtDevice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Device:"
+        android:text="CarrierName:"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
     <TextView
-        android:id="@+id/textViewDevice"
+        android:id="@+id/textViewCarrierName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
-        android:text="Device" />
+        android:textColor="@android:color/white"
+        android:text="CarrierName" />
     <TextView
         android:id="@+id/txtCpu_Core"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cpu_Core:"
+        android:text="Os_Code:"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
     <TextView
-        android:id="@+id/textViewCpu_Core"
+        android:id="@+id/textViewOs_Code"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
-        android:text="Cpu_Core" />
+        android:textColor="@android:color/white"
+        android:text="Os_Code" />
     <TextView
         android:id="@+id/txtPrivate_ip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" Private_ip:"
+        android:text="ModelName:"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
     <TextView
-        android:id="@+id/textViewPrivate_ip"
+        android:id="@+id/textViewModelName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
-        android:text="Private_ip" />
+        android:textColor="@android:color/white"
+        android:text="ModelName" />
     <TextView
         android:id="@+id/textViewNextInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:onClick="Next2"
-        android:textColor="@android:color/holo_green_dark"
+        android:onClick="Next4"
+        android:textColor="@android:color/holo_blue_bright"
         android:text="For More Info Plz Click Here>>" />
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
