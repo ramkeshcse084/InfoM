@@ -17,17 +17,27 @@ public class Next3Info extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next3_info);
         txtCpu_Arch=(TextView)findViewById(R.id.textViewCpu_Arch);
-        txtNetInfo=(TextView)findViewById(R.id.textViewNextInfo);
+        txtNetInfo=(TextView)findViewById(R.id.textViewNetwork_info);
         txtCpu_Abi=(TextView)findViewById(R.id.textViewalCpu_Abi);
         txtCarrierName=(TextView)findViewById(R.id.textViewCarrierName);
         txtOsCode=(TextView)findViewById(R.id.textViewOs_Code);
         txtModelName=(TextView)findViewById(R.id.textViewModelName);
 
+        String cpuArch=Cpu_Arch(3);
+        String network=Network_info(2).toString();
+        String cpuAbi=Cpu_Abi(4);
+        String carrier=CarrierName(3);
+        String os_Code=Os_Code(4);
+        String mdlName=ModelName(7);
+        txtModelName.setText(mdlName);
+         txtOsCode.setText(os_Code);
+         txtCarrierName.setText(carrier);
+         txtCpu_Abi.setText(cpuAbi);
+         txtNetInfo.setText(network);
+         txtCpu_Arch.setText(cpuArch);
+
     }
-    public void Next4(View v){
-        Intent i=new Intent(getApplication(),Next3Info.class);
-        startActivity(i);
-    }
+
 
     public static String Cpu_Arch(int number){
         String cpu_arch = System.getProperty("os.arch");

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5sp"
-    android:background="@android:color/holo_orange_light"
+    android:background="@android:color/holo_green_dark"
     android:orientation="vertical"
     tools:context="com.nestedmango.infom.Next3Info">
 
@@ -48,7 +48,7 @@
         android:id="@+id/textViewNetwork_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="12sp"
         android:textColor="@android:color/white"
         android:text="Network_info" />
 
@@ -112,14 +112,7 @@
         android:textSize="20sp"
         android:textColor="@android:color/white"
         android:text="ModelName" />
-    <TextView
-        android:id="@+id/textViewNextInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:onClick="Next4"
-        android:textColor="@android:color/holo_blue_bright"
-        android:text="For More Info Plz Click Here>>" />
+
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
