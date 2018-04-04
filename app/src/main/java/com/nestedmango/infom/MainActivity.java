@@ -23,4 +23,10 @@ import android.view.View;
          startActivity(i);
 
      }
+     public void nextSen(View v){
+         Intent i=new Intent(getApplication(),Sensors.class);
+         startActivity(i);
+
+     }
+
 }

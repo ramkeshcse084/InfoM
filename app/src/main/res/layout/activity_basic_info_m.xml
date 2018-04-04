@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10sp"
-
+android:background="@android:color/holo_orange_dark"
     android:orientation="vertical"
     tools:context="com.nestedmango.infom.BasicInfoM">
 
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="fingerPr" />
     <TextView
         android:id="@+id/txtosIncrement"
@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="OsIncrement" />
 
     <TextView
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Hardware" />
     <TextView
         android:id="@+id/txtDevice"
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Device" />
     <TextView
         android:id="@+id/txtCpu_Core"
@@ -95,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Cpu_Core" />
     <TextView
         android:id="@+id/txtPrivate_ip"
@@ -110,7 +110,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Private_ip" />
     <TextView
         android:id="@+id/textViewNextInfo"
@@ -118,7 +118,8 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:onClick="Next2"
-        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_bright"
         android:text="For More Info Plz Click Here>>" />
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"

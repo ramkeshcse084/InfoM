@@ -117,6 +117,7 @@ android:background="@android:color/holo_blue_dark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
+        android:textStyle="bold"
         android:onClick="Next3"
         android:textColor="@android:color/holo_blue_bright"
         android:text="For More Info Plz Click Here>>" />
